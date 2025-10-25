@@ -1,0 +1,29 @@
+.home-screen {
+  background-image: url("./bg-home-screen.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  font-weight: 700;
+}
+
+.home-screen__title {
+  font-size: 72px;
+}
+
+.home-screen__sub-title {
+  position: absolute;
+  bottom: 100px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-screen__sub-title_img {
+  width: 20px;
+  height: 30px;
+}
