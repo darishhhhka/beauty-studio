@@ -1,4 +1,5 @@
 import { Image } from "../Image/Image";
+import "./Post.css";
 
 type Props = {
   img: {
@@ -13,10 +14,10 @@ type Props = {
 
 export const Post = ({ img, info }: Props) => {
   return (
-    <div>
+    <div className="container-post">
       <Image url={img.url} type={img.type} />
       {info && (
-        <div>
+        <div className="container-post__info">
           <h4>{info.title}</h4>
           <span>{info.subTitle}</span>
         </div>

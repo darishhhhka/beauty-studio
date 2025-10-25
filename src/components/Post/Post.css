@@ -1,0 +1,10 @@
+.container-post {
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.container-post__info {
+  font-size: 30px;
+}
