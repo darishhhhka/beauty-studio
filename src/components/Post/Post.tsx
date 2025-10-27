@@ -18,8 +18,8 @@ export const Post = ({ img, info }: Props) => {
       <Image url={img.url} type={img.type} />
       {info && (
         <div className="container-post__info">
-          <h4>{info.title}</h4>
-          <span>{info.subTitle}</span>
+          <h4 className="container-post__info_title"> {info.title}</h4>
+          <span className="container-post__info_subtitle">{info.subTitle}</span>
         </div>
       )}
     </div>
