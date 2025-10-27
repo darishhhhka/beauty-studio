@@ -11,13 +11,16 @@ type PostType = {
     subTitle?: string;
   };
 };
-type Props = { title?: string; posts: PostType[] };
 
-export const ItemList = ({ posts, title }: Props) => {
+type PaddingSize = "small" | "normal" | "large";
+
+type Props = { title?: string; posts: PostType[]; paddingSize?: PaddingSize };
+
+export const ItemList = ({ posts, title, paddingSize = "normal" }: Props) => {
   return (
-    <div className="container">
-      <h2>{title}</h2>
-      <div className="container__content">
+    <div className="list">
+      {title && <h2 className="list__title">{title}</h2>}
+      <div className={`container__content ${paddingSize}`}>
         {posts.map((post) => (
           <Post img={post.img} info={post.info} />
         ))}

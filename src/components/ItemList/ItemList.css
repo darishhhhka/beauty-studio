@@ -7,7 +7,29 @@
 .container__content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.normal {
   column-gap: 44px;
   row-gap: 80px;
-  justify-content: center;
+}
+
+.small {
+  gap: 24px;
+}
+
+.large {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.list {
+  width: 100%;
 }
