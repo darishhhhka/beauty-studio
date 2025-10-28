@@ -11,3 +11,7 @@
 .large {
   font-size: 24px;
 }
+
+.link-item {
+  text-decoration: none;
+}

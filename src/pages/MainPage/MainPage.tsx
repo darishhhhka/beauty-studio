@@ -7,7 +7,12 @@ import { cosmetics, sevices, works } from "../../posts/posts";
 import "./MainaPage.css";
 
 export const MainPage = () => {
-  const links = ["Показать все", "Парикмахерские услуги", "Маникюр", "Педикюр"];
+  const links = [
+    { title: "Показать все", url: "/" },
+    { title: "Парикмахерские услуги", url: "/" },
+    { title: "Маникюр", url: "/" },
+    { title: "Педикюр", url: "/" },
+  ];
   return (
     <Page
       hasBg={true}

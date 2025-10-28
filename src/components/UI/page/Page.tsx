@@ -10,7 +10,12 @@ const contact = [
   "Новоостровский проспект, дом 36 лит. С",
 ];
 
-const links = ["Главная", "Мастера", "Цены", "Контакты"];
+const links = [
+  { title: "Главная", url: "/main" },
+  { title: "Мастера", url: "/masters" },
+  { title: "Цены", url: "/price" },
+  { title: "Контакты", url: "/contacts" },
+];
 
 const mode = ["C 10:00 до 21:00 (Пн-Пт)", "С 11:00 до 20:00 (Сб-Вс)"];
 

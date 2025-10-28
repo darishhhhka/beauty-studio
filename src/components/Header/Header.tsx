@@ -6,11 +6,15 @@ import menuButton from "../../assets/menuButton.png";
 import { Line } from "../UI/line/Line";
 import { Navbar } from "../Navbar/Navbar";
 
-type Props = { links: string[] };
+type LinkType = { title: string; url: string };
+
+type Props = { links: LinkType[] };
+
 export const Header = ({ links }: Props) => {
   const mid = Math.floor(links.length / 2);
   const startLinks = links.slice(0, mid);
   const endLinks = links.slice(mid);
+
   return (
     <header className="header">
       <nav className="header-content">
