@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Post } from "../Post/Post";
 import "./ItemList.css";
 
@@ -14,16 +15,29 @@ type PostType = {
 
 type PaddingSize = "small" | "normal" | "large";
 
-type Props = { title?: string; posts: PostType[]; paddingSize?: PaddingSize };
+type Props = {
+  title?: string;
+  posts: PostType[];
+  paddingSize?: PaddingSize;
+  content?: JSX.Element;
+};
 
-export const ItemList = ({ posts, title, paddingSize = "normal" }: Props) => {
+export const ItemList = ({
+  posts,
+  title,
+  paddingSize = "normal",
+  content,
+}: Props) => {
   return (
     <div className="list">
       {title && <h2 className="list__title">{title}</h2>}
-      <div className={`container__content ${paddingSize}`}>
-        {posts.map((post) => (
-          <Post img={post.img} info={post.info} />
-        ))}
+      <div className="list__content">
+        {content}
+        <div className={`list__content_posts ${paddingSize}`}>
+          {posts.map((post) => (
+            <Post img={post.img} info={post.info} />
+          ))}
+        </div>
       </div>
     </div>
   );
