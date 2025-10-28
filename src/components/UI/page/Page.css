@@ -1,14 +1,14 @@
 .page {
   background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-bg {
   background-image: url("../../../assets/bg-home-screen.png");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .page-container {

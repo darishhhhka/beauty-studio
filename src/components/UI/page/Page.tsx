@@ -3,7 +3,7 @@ import "./Page.css";
 import { Footer } from "../../Footer/Footer";
 import { Header } from "../../Header/Header";
 
-type Props = { content: JSX.Element };
+type Props = { content: JSX.Element; hasBg?: boolean };
 const contact = [
   "+7 (812) 123-45-67",
   "+7 (911) 123-45-67",
@@ -13,15 +13,15 @@ const contact = [
 const links = ["Главная", "Мастера", "Цены", "Контакты"];
 
 const mode = ["C 10:00 до 21:00 (Пн-Пт)", "С 11:00 до 20:00 (Сб-Вс)"];
-export const Page = ({ content }: Props) => {
+
+export const Page = ({ content, hasBg = false }: Props) => {
+  const classHasBg = hasBg ? "page-bg" : "";
   return (
-    <div className="page">
-      <div className="page-bg">
-        <div className="page-container">
-          <Header links={links} />
-          {content}
-          <Footer infoContacts={contact} infoMode={mode} />
-        </div>
+    <div className={`page ${classHasBg}`}>
+      <div className="page-container">
+        <Header links={links} />
+        {content}
+        <Footer infoContacts={contact} infoMode={mode} />
       </div>
     </div>
   );
