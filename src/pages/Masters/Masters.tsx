@@ -3,5 +3,5 @@ import { Page } from "../../components/UI/page/Page";
 import { masters } from "../../posts/posts";
 
 export const Masters = () => {
-  return <Page content={<ItemList title="Наши мастера" posts={masters} />} />;
+  return <Page title="Наши мастера" content={<ItemList posts={masters} />} />;
 };

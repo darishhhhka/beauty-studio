@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  padding-bottom: 85px;
 }
 
 .page-bg {
@@ -22,6 +24,11 @@
 .page-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 150px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: var(--title-page-size);
 }

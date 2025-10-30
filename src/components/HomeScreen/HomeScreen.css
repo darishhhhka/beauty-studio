@@ -1,5 +1,5 @@
 .home-screen {
-  height: 100vh;
+  height: calc(100vh - (var(--gap-header-content-footer) + 70px));
   display: flex;
   justify-content: center;
   align-items: center;

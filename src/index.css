@@ -11,4 +11,8 @@
 
 :root {
   --main-color: #111111;
+  --title-page-size: 48px;
+  --title-page-weight: 700;
+  --gap-header-content-footer: 100px;
+  --padding-between-section: 150px;
 }
