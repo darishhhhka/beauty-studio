@@ -1,3 +1,4 @@
+import { PriceList } from './../components/PriceList/PriceList';
 import card1 from "../assets/services/card1.png";
 import card2 from "../assets/services/card2.png";
 import card3 from "../assets/services/card3.png";
@@ -37,7 +38,7 @@ type TypeServices = {
   }
 }
 
-export const sevices: TypeServices[] = [
+export const SERVICESCARD: TypeServices[] = [
   {
     img: { url: card1, type: "img-with-border" },
     info: { title: "Парикмахерские услуги" },
@@ -64,7 +65,7 @@ export const sevices: TypeServices[] = [
   },
 ];
 
-export const works = [
+export const WORKS = [
   {img:{url: work1}},  
   {img:{url: work2}}, 
   {img:{url: work3}}, 
@@ -76,7 +77,7 @@ export const works = [
   {img:{url: work9}},
 ]
 
-export const masters = [
+export const MASTERS = [
   {
     img: { url: master1, type: "img-with-border" },
     info: {title: "Елена Васильевна", subTitle: "Визажист"}
@@ -103,9 +104,39 @@ export const masters = [
   },
 ]
 
-export const cosmetics = [
+export const COSMETICS = [
   {img: {url: cosmetics1}},
   {img: {url: cosmetics2}},
   {img: {url: cosmetics3}},
   {img: {url: cosmetics4}}
 ]
+
+export const PRICELIST = [
+  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
+  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
+  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
+]
+
+export const SERVICES = [
+    { title: "Показать все", url: "/" },
+    { title: "Парикмахерские услуги", url: "/" },
+    { title: "Маникюр", url: "/" },
+    { title: "Педикюр", url: "/" },
+  ];
+
+export const CONTACTS = [
+    "+7 (812) 123-45-67",
+    "+7 (911) 123-45-67",
+    "Новоостровский проспект, дом 36 лит. С",
+  ];
+
+export const MODE = ["C 10:00 до 21:00 (Пн-Пт)", "С 11:00 до 20:00 (Сб-Вс)"];

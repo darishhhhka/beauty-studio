@@ -1,7 +1,7 @@
 import { ItemList } from "../../components/ItemList/ItemList";
 import { Page } from "../../components/UI/page/Page";
-import { masters } from "../../posts/posts";
+import { MASTERS } from "../../posts/posts";
 
 export const Masters = () => {
-  return <Page title="Наши мастера" content={<ItemList posts={masters} />} />;
+  return <Page title="Наши мастера" content={<ItemList posts={MASTERS} />} />;
 };

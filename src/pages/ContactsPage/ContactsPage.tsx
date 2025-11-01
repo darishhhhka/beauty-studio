@@ -1,23 +1,9 @@
 import { Contacts } from "../../components/Contacts/Contacts";
 import { Page } from "../../components/UI/page/Page";
 import "./ContactsPage.css";
+import { CONTACTS, MODE } from "../../posts/posts";
 
 export const ContactsPage = () => {
-  const contact = [
-    "+7 (812) 123-45-67",
-    "+7 (911) 123-45-67",
-    "Новоостровский проспект, дом 36 лит. С",
-  ];
-
-  const mode = ["C 10:00 до 21:00 (Пн-Пт)", "С 11:00 до 20:00 (Сб-Вс)"];
-
-  const links = [
-    { title: "Главная", url: "/main" },
-    { title: "Мастера", url: "/masters" },
-    { title: "Цены", url: "/price" },
-    { title: "Контакты", url: "/contacts" },
-  ];
-
   return (
     <Page
       title="Контакты"
@@ -57,10 +43,10 @@ export const ContactsPage = () => {
             ></iframe>
           </div>
           <div className="contacts-container">
-            <Contacts title="Контакты" info={contact} />
-            <Contacts title="Режим работы" info={mode} />
-            <Contacts title="Контакты" info={contact} />
-            <Contacts title="Режим работы" info={mode} />
+            <Contacts title="Контакты" info={CONTACTS} />
+            <Contacts title="Режим работы" info={MODE} />
+            <Contacts title="Контакты" info={CONTACTS} />
+            <Contacts title="Режим работы" info={MODE} />
           </div>
         </div>
       }

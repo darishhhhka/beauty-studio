@@ -1,0 +1,30 @@
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.price-item__title-subtitle {
+  margin-bottom: 20px;
+}
+
+.price-item__title {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.price-item__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.price-item__price {
+}

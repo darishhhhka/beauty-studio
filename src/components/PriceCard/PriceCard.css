@@ -1,0 +1,5 @@
+.price-card {
+  display: flex;
+  gap: 134px;
+  align-items: center;
+}
