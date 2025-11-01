@@ -1,0 +1,10 @@
+.photo-filtering {
+  display: flex;
+  gap: 60px;
+}
+
+.photo-filtering__item {
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+}

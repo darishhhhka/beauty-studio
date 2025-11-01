@@ -66,15 +66,15 @@ export const SERVICESCARD: TypeServices[] = [
 ];
 
 export const WORKS = [
-  {img:{url: work1}},  
-  {img:{url: work2}}, 
-  {img:{url: work3}}, 
-  {img:{url: work4}},  
-  {img:{url: work5}},  
-  {img:{url: work6}}, 
-  {img:{url: work7}},
-  {img:{url: work8}},
-  {img:{url: work9}},
+  {img:{url: work1}, type: "hairdress"},  
+  {img:{url: work2}, type: "pedicure"}, 
+  {img:{url: work3}, type: "manicure"}, 
+  {img:{url: work4}, type: "hairdress"},  
+  {img:{url: work5}, type: "hairdress"},  
+  {img:{url: work6}, type: "hairdress"}, 
+  {img:{url: work7}, type: "manicure"},
+  {img:{url: work8}, type: "pedicure"},
+  {img:{url: work9}, type: "pedicure"},
 ]
 
 export const MASTERS = [
@@ -112,25 +112,25 @@ export const COSMETICS = [
 ]
 
 export const PRICELIST = [
-  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
-  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
-  [{title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000},
-  {title: "Женская укладка", description: "+ обработк кончинков волос", price: 1000}],
+  [{title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000}],
+  [{title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000}],
+  [{title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000},
+  {title: "Женская укладка", description: "+ обработка кончинков волос", price: 1000}],
 ]
 
 export const SERVICES = [
-    { title: "Показать все", url: "/" },
-    { title: "Парикмахерские услуги", url: "/" },
-    { title: "Маникюр", url: "/" },
-    { title: "Педикюр", url: "/" },
+    { title: "Показать все", type: "showAll" },
+    { title: "Парикмахерские услуги", type: "hairdress"},
+    { title: "Маникюр", type: "manicure" },
+    { title: "Педикюр", type: "pedicure" },
   ];
 
 export const CONTACTS = [

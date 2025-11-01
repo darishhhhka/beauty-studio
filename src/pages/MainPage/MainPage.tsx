@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { About } from "../../components/About/About";
 import { HomeScreen } from "../../components/HomeScreen/HomeScreen";
 import { ItemList } from "../../components/ItemList/ItemList";
-import { Navbar } from "../../components/Navbar/Navbar";
+import { PhotoFiltering } from "../../components/PhotoFiltering/PhotoFiltering";
 import { Page } from "../../components/UI/page/Page";
 import { COSMETICS, SERVICESCARD, SERVICES, WORKS } from "../../posts/posts";
 import "./MainaPage.css";
+import type { Photo } from "../../components/PhotoFiltering/PhotoFiltering";
 
 export const MainPage = () => {
-  
+  const [photo, setPhoto] = useState<Photo[]>(WORKS);
+  console.log(setPhoto);
+
   return (
     <Page
       hasBg={true}
@@ -18,9 +22,9 @@ export const MainPage = () => {
           <ItemList posts={SERVICESCARD} />
           <ItemList posts={COSMETICS} paddingSize="large" />
           <ItemList
-            content={<Navbar links={SERVICES} fontSize="large" />}
+            content={<PhotoFiltering setPhoto={setPhoto} />}
             title="Наши работы"
-            posts={WORKS}
+            posts={photo}
             paddingSize="small"
           />
         </div>
