@@ -9,9 +9,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 100px;
   flex: 1;
 }
 
 .line-container {
   width: 100%;
+}
+
+.header__sing-up {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }

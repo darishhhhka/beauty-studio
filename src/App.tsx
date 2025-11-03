@@ -5,6 +5,8 @@ import { Masters } from "./pages/Masters/Masters";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Price } from "./pages/Price/Price";
 import { Test } from "./pages/Test/Test.tsx";
+import { Form } from "./components/Form/Form.tsx";
+import { Modal } from "./components/Modal/Modal.tsx";
 
 function App() {
   return (
