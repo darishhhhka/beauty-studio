@@ -1,5 +1,5 @@
 import "./Form.css";
-import iconClose from "../../assets/icons/icon-close.png";
+import iconClose from "@/assets/icons/icon-close.png";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { type ApplicationForm } from "./types";
