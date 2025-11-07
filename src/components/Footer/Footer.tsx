@@ -1,5 +1,5 @@
-import { Contacts } from "../Contacts/Contacts";
-import { Line } from "../UI/line/Line";
+import { Contacts } from "../../feature/Contacts/Contacts";
+import { Line } from "@components/UI/line/Line";
 import { Logo } from "../UI/logo/Logo";
 import "./Footer.css";
 

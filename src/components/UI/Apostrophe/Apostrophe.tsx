@@ -1,4 +1,4 @@
-import apostrophe from "../../../assets/apostrophe.png";
+import apostrophe from "@/assets/apostrophe.png";
 
 export const Apostrophe = () => {
   return (

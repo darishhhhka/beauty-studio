@@ -1,4 +1,4 @@
-import { Line } from "../UI/line/Line";
+import { Line } from "@components/UI/line/Line";
 import "./PriceList.css";
 
 type PriceItem = {

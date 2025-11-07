@@ -1,4 +1,4 @@
-import { Image } from "../Image/Image";
+import { Image } from "@shared/UI/Image/Image";
 import "./Post.css";
 
 type Props = {

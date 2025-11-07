@@ -1,5 +1,5 @@
-import { useState, type SetStateAction, type Dispatch } from "react";
-import { WORKS, SERVICES } from "../../posts/posts";
+import { type SetStateAction, type Dispatch } from "react";
+import { WORKS, SERVICES } from "@/posts/posts";
 import "./PhotoFiltering.css";
 
 export type Photo = {

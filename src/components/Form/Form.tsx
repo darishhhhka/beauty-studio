@@ -30,15 +30,11 @@ export const Form = ({ setOpen }: Props) => {
   });
 
   const submitForm = (data: ApplicationForm) => {
-    console.log("priv");
-
     console.log(data);
 
     reset();
     setOpen(false);
   };
-
-  console.log(errors);
 
   return (
     <div className="form-wrapper">

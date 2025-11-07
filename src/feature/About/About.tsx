@@ -1,5 +1,5 @@
-import { Apostrophe } from "../UI/Apostrophe/Apostrophe";
-import { Text } from "../Text/Text";
+import { Apostrophe } from "../../components/UI/Apostrophe/Apostrophe";
+import { Text } from "@components/Text/Text";
 import "./About.css";
 
 export const About = () => {

@@ -1,4 +1,4 @@
-import { Contacts } from "../../components/Contacts/Contacts";
+import { Contacts } from "../../feature/Contacts/Contacts";
 import { Page } from "../../components/UI/page/Page";
 import "./ContactsPage.css";
 import { CONTACTS, MODE } from "../../posts/posts";

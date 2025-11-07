@@ -1,6 +1,6 @@
-import priceCard from "../../assets/price-card.png";
-import { Image } from "../Image/Image";
-import { PriceList } from "../PriceList/PriceList";
+import priceCard from "@/assets/price-card.png";
+import { Image } from "@shared/UI/Image/Image";
+import { PriceList } from "@components/PriceList/PriceList";
 import "./PriceCard.css";
 
 type PriceItem = {

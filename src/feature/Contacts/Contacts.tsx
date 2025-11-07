@@ -1,6 +1,6 @@
 import "./Contacts.css";
-import { Icon } from "../UI/icon/Icon";
-import instagram from "../../assets/inst.png";
+import { Icon } from "@shared/UI/icon";
+import instagram from "@/assets/inst.png";
 
 type Props = { title: string; info?: string[]; logo?: boolean };
 

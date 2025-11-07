@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import "./Page.css";
-import { Footer } from "../../Footer/Footer";
-import { Header } from "../../Header/Header";
+import { Footer } from "@components/Footer/Footer";
+import { Header } from "@components/Header/Header";
 
 type Props = { title?: string; content: JSX.Element; hasBg?: boolean };
 const contact = [

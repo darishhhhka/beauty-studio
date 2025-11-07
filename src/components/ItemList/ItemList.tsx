@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { Post } from "../Post/Post";
+import { Post } from "@components/Post/Post";
 import "./ItemList.css";
 
 type PostType = {

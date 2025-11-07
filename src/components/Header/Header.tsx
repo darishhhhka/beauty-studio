@@ -1,4 +1,4 @@
-import { Icon } from "../UI/icon/Icon";
+import { Icon } from "@shared/UI/icon";
 import { Logo } from "../UI/logo/Logo";
 import "./Header.css";
 import instagram from "../../assets/inst.png";
@@ -37,7 +37,7 @@ export const Header = ({ links }: Props) => {
         </div>
       </header>
 
-      <Modal content={<Form setOpen={setOpen} />} isOpen={open} />
+      <Modal setOpen={setOpen} content={<Form setOpen={setOpen} />} isOpen={open} />
     </>
   );
 };
