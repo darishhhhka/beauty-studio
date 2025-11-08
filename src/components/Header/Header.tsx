@@ -37,7 +37,11 @@ export const Header = ({ links }: Props) => {
         </div>
       </header>
 
-      <Modal content={<Form setOpen={setOpen} />} isOpen={open} />
+      <Modal
+        setOpen={setOpen}
+        content={<Form setOpen={setOpen} />}
+        isOpen={open}
+      />
     </>
   );
 };
