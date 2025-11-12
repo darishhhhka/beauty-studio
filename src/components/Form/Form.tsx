@@ -1,10 +1,11 @@
 import "./Form.css";
 import iconClose from "../../assets/icons/icon-close.png";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { type ApplicationForm } from "./types";
 import { shema } from "./shema";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { validPhone } from "./validPhone";
 
 type Props = { setOpen: Dispatch<SetStateAction<boolean>> };
 
@@ -13,10 +14,13 @@ export const Form = ({ setOpen }: Props) => {
     setOpen(false);
   };
 
+  const fn = validPhone();
+
   const {
     control,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<ApplicationForm>({
     resolver: yupResolver(shema),
@@ -30,8 +34,6 @@ export const Form = ({ setOpen }: Props) => {
   });
 
   const submitForm = (data: ApplicationForm) => {
-    console.log("priv");
-
     console.log(data);
 
     reset();
@@ -95,11 +97,17 @@ export const Form = ({ setOpen }: Props) => {
               control={control}
               render={({ field }) => (
                 <input
+                  {...field}
+                  value={field.value}
+                  onChange={(e) => {
+                    field.onChange(e);
+                    let newValue = fn(e.target.value);
+                    setValue("phone", newValue);
+                  }}
                   id="phone"
                   className="form__input"
                   type="text"
                   placeholder="Введите телефон"
-                  {...field}
                 />
               )}
             />
