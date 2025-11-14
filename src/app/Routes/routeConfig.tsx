@@ -1,8 +1,8 @@
 import { Navigate, type RouteObject } from "react-router-dom";
-import { MainPage } from "../../pages/MainPage/MainPage";
-import { Masters } from "../../pages/Masters/Masters";
-import { ContactsPage } from "../../pages/ContactsPage/ContactsPage";
-import { Price } from "../../pages/Price/Price";
+import { MainPage } from "@pages/MainPage";
+import { Masters } from "@pages/Masters";
+import { ContactsPage } from "@pages/ContactsPage";
+import { Price } from "@pages/Price";
 
 export const routeConfig: RouteObject[] = [
   {

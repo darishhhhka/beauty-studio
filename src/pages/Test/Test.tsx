@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { fetchData } from "./mockServer.ts";
-import { useDebounce } from "../../hooks/useDebounce.ts";
+import { useDebounce } from "../../shared/hooks/useDebounce.ts";
 
 export type Product = { id: number; name: string };
 export const Test = () => {
