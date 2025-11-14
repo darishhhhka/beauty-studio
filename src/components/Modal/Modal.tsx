@@ -1,4 +1,10 @@
-import { useRef, type Dispatch, type JSX, type SetStateAction } from "react";
+import {
+  useEffect,
+  useRef,
+  type Dispatch,
+  type JSX,
+  type SetStateAction,
+} from "react";
 import "./Modal.css";
 import { createPortal } from "react-dom";
 
@@ -8,27 +14,23 @@ type Props = {
   setOpen: Dispatch<SetStateAction<boolean>>;
 };
 export const Modal = ({ content, isOpen, setOpen }: Props) => {
-  const layout = useRef<HTMLDivElement | null>(null);
+  const layoutContent = useRef<HTMLDivElement | null>(null);
 
-  const useClickOutside = () => {
-    console.log(layout.current);
-    if (layout.current) {
-      layout.current.addEventListener(
-        "click",
-        (e) => {
-          console.log("window is close");
-          setOpen(false);
-          e.stopPropagation();
-        },
-        true
-      );
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (
+      layoutContent.current &&
+      !layoutContent.current.contains(e.target as Node)
+    ) {
+      setOpen(false);
     }
   };
 
   const active = isOpen ? "modal active" : "modal";
   return createPortal(
-    <div onClick={useClickOutside} ref={layout} className={active}>
-      <div className="modal-content">{content}</div>
+    <div className={active} onClick={handleClick} data-testid={"test-modal"}>
+      <div ref={layoutContent} className="modal-content">
+        {content}
+      </div>
     </div>,
     document.body
   );
