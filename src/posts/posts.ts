@@ -140,3 +140,10 @@ export const CONTACTS = [
   ];
 
 export const MODE = ["C 10:00 до 21:00 (Пн-Пт)", "С 11:00 до 20:00 (Сб-Вс)"];
+
+export const LINKS = [
+  { title: "Главная", url: "/main" },
+  { title: "Мастера", url: "/masters" },
+  { title: "Цены", url: "/price" },
+  { title: "Контакты", url: "/contacts" },
+];

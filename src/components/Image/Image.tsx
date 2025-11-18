@@ -5,8 +5,8 @@ export const Image = ({ url, type }: Props) => {
   const border = type !== undefined ? "img-with-border" : "img";
   return (
     <div className="img">
-      <img src={url} alt="" />
-      <div className={border}></div>
+      <img src={url} alt="image" />
+      <div data-testid="image-with-border" className={border}></div>
     </div>
   );
 };
