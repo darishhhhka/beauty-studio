@@ -15,12 +15,12 @@ export const PriceCard = ({ priceList, index }: Props) => {
   return (
     <>
       {index % 2 === 0 ? (
-        <div className="price-card">
-          <Image url={priceCard} />
-          <PriceList priceList={priceList} />
+        <div data-testid="test-price-card" className="price-card">
+          <Image data-testid="test-price-card-img" url={priceCard} />
+          <PriceList data-testid="test-price-card-list" priceList={priceList} />
         </div>
       ) : (
-        <div className="price-card">
+        <div data-testid="test-price-card" className="price-card">
           <PriceList priceList={priceList} />
           <Image url={priceCard} />
         </div>

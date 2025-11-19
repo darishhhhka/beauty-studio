@@ -8,7 +8,7 @@ describe("Contacts", () => {
   it("Компонент рендерит данные, переданные ему в пропсы без каритнки", () => {
     render(<Contacts title="Режим работы" info={MODE} />);
     expect(screen.getByText("Режим работы")).toBeInTheDocument();
-    MODE.forEach((el) => expect(screen.getByText(el)));
+    MODE.forEach((el) => expect(screen.getByText(el)).toBeInTheDocument());
     expect(screen.queryByRole("img")).toBeNull();
   });
   it("Компонент рендерит картинку если передать в пропс logo=true", () => {
